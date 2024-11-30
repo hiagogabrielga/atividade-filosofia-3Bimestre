@@ -1,0 +1,11 @@
+:root{
+    --cor-background: #f4f4f4;
+    --cor-componentes: #e2e2e2;
+    --cor-detalhes: #53ff53;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--cor-background);
+}
+

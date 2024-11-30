@@ -1,0 +1,63 @@
+@import url(global.css);
+
+.header{
+    background-color: var(--cor-componentes);
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    padding: 1%;
+}
+
+.logo-header{
+    width: 80px;
+}
+
+.nav-header{
+    margin-left: calc(50% - 100px - 25vw);
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.ul-nav-header{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.li-nav-header a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.li-nav-header a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--cor-detalhes);
+    left: -5px;
+    width: 0;
+    display: block;
+    height: 5px;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.li-nav-header a:hover{
+    color: black;
+}
+
+.li-nav-header a:hover::after{
+    width: calc(100% + 10px);
+}
+
+#ancora-escolhida a{
+    color: black;
+}
+
+
+#ancora-escolhida a::after{
+    width: calc(100% + 10px);
+}
