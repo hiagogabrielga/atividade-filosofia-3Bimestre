@@ -8,25 +8,36 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="div-logo-header">
             <img class="logo-header" src="img/logo-header-claro.png" alt="Logo IF">
         </div>
-        <nav class="nav-header">
+        <nav class="nav-header" id="nav-desktop">
             <ul class="ul-nav-header">
                 <li class="li-nav-header" id="ancora-escolhida"><a href="#">EX Machina</a></li>
                 <li class="li-nav-header"><a href="">Sobre a atividade</a></li>
                 <li class="li-nav-header"><a href="">Envolvidos</a></li>
             </ul>
         </nav>
+        <div id="lottie-animation-menu" style="width: 70px; height: 70px; cursor: pointer;"></div>
     </header>
+    <div class="campo-menu-mobile">
+        <nav id="nav-mobile">
+            <ul class="ul-nav-header-mobile">
+                <li class="li-nav-header-mobile" id="ancora-escolhida"><a href="#">EX Machina</a></li>
+                <li class="li-nav-header-mobile"><a href="">Sobre a atividade</a></li>
+                <li class="li-nav-header-mobile"><a href="">Envolvidos</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
-
     </main>
     <footer>
-
+        
     </footer>
+    <script src="/js/animacaoMenuMobile.js"></script>
 </body>
 </html>
