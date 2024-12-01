@@ -1,11 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 :root{
     --cor-background: #f4f4f4;
     --cor-componentes: #e2e2e2;
     --cor-detalhes: #53ff53;
     font-family: 'Roboto', sans-serif;
+    --cor-copyright: #2E2E2E;
+}
+
+html, body{
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 body{
     background-color: var(--cor-background);
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
 }
 
+main{
+    flex-grow: 1; 
+}
