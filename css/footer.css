@@ -4,7 +4,7 @@
     top: 20px;
     background-color: var(--cor-componentes);
     height: auto;
-    box-shadow: inset 0 7px 5px -5px var(--cor-detalhes);
+    box-shadow: 0 7px 15px 5px var(--cor-detalhes);
 }
 
 .conteudo-footer{
@@ -30,6 +30,7 @@
     padding: 1%;
     display: flex;
     box-sizing: border-box;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .copyright h3{
