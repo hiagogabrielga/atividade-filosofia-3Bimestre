@@ -1,0 +1,73 @@
+.section-envolvidos-main h2{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+}
+
+.section-envolvidos-main h3{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+}
+
+.section-envolvidos-main>section{
+    margin-top: 20px;
+}
+
+.botao-insta-envolvidos{
+    background-color: transparent;
+    border: none;
+    padding: 5px 0 0;
+}
+
+.botao-insta-envolvidos a{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.botao-insta-envolvidos a:hover{
+    color: black;
+}
+
+.botao-insta-envolvidos span{
+    padding-left: 5px;
+}
+
+.div-nome-envolvidos{
+    height: 50%;
+    
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 2.5px;
+    position: absolute;
+    left: 120px;
+}
+
+.envolvidos{
+    position: relative;
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.envolvidos::after{
+    content: "";
+    width: 100%;
+    height: 2.5px;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+
+.envolvido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}

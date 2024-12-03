@@ -14,12 +14,15 @@
 .slide {
     min-width: 100%;
     transition: opacity 0.5s ease;
+    box-shadow: inset 100px 100px 100px 500px rgba(0, 0, 0);
 }
 
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.5;
+    box-shadow: inset 100% 100% 5px rgb(0, 0, 0);
 }
 
 .control {
@@ -101,10 +104,14 @@
     margin-bottom: 1%;
 }
 
-.info,
-.subInfo {
+.info{
     color: white;
     font-size: 45pt;
+}
+
+.subInfo{
+    color: white;
+    font-size: 35pt;
 }
 
 @media screen and (max-width: 1045px) {

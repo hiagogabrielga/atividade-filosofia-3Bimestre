@@ -1,6 +1,6 @@
 const subtitulos = [
-    "parte 1",
-    "parte 2",
+    "Caleb é convidado para testar Ava.",
+    "A relação entre Caleb, Ava e Nathan se aprofunda.",
     "parte 3",
     "parte 4",
     "parte 5",
@@ -29,7 +29,7 @@ function updateCarousel() {
 
     // Exibir informações do ato
     const currentAto = slides[currentSlide].dataset.ato;
-    info.textContent = `${currentAto} - Posição ${currentSlide + 1}`;
+    info.textContent = `${currentAto}:`;
     subInfo.textContent = `${subtitulos[currentSlide]}`
 }
 
@@ -57,9 +57,26 @@ indicators.forEach((indicator, index) => {
 setInterval(() => {
     currentSlide = (currentSlide + 1) % totalSlides;
     updateCarousel();
-}, 5000);
+}, 7000);
 
 
 if (window.innerWidth > 765) {
     updateCarousel();
 }
+
+
+window.addEventListener("scroll", function () {
+    let header = document.querySelector('.header')
+    let ancoraEscolhida = this.document.querySelector('#ancora-escolhida')
+    let conteudo = document.querySelector('.div-logo-header')
+    header.classList.toggle('rolagem', window.scrollY > 0)
+    if (window.innerWidth > 765) {
+        if (window.scrollY > 0) {
+            ancoraEscolhida.style.color = 'black'
+        } else{
+            ancoraEscolhida.style.color = 'rgb(255, 255, 255)'
+        }
+    }
+
+    conteudo.classList.toggle('rolagem', window.scrollY > 100)
+})
