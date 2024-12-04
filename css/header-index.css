@@ -17,7 +17,7 @@ header.rolagem{
 }
 
 .rolagem>nav>ul>li>a{
-    color: rgba(0, 0, 0, 0.5) ;
+    color: var(--color-emphasis-half) ;
 }
 
 .logo-header{
@@ -57,7 +57,7 @@ header.rolagem{
 }
 
 .rolagem>nav>ul>li>a:hover{
-    color: black;
+    color: var(--color-emphasis);
 }
 
 .li-nav-header a:hover{
@@ -108,7 +108,7 @@ header.rolagem{
 }
 
 .li-nav-header-mobile a{
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--color-emphasis-half);
     text-decoration: none;
     position: relative;
     transition: all 0.2s;
@@ -136,15 +136,15 @@ header.rolagem{
 
 @media screen and (max-width: 765px){
     .li-nav-header a:hover{
-        color: rgb(0, 0, 0);
+        color: var(--color-emphasis);
     }
 
     .li-nav-header a{
-        color: rgba(0, 0, 0, 0.5);
+        color: var(--color-emphasis-half);
     }
     
     #ancora-escolhida{
-        color: black;
+        color: var(--color-emphasis);
     }
 
     header{

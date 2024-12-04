@@ -21,14 +21,14 @@
 }
 
 .botao-insta-envolvidos a{
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--color-icon-half);
     font-size: 14px;
     text-decoration: none;
     transition: all 0.2s;
 }
 
 .botao-insta-envolvidos a:hover{
-    color: black;
+    color: var(--color-text-primary);
 }
 
 .botao-insta-envolvidos span{
@@ -38,7 +38,7 @@
 .div-nome-envolvidos{
     height: 50%;
     
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: var(--color-icon-half);
     width: 2.5px;
     position: absolute;
     left: 120px;
@@ -58,7 +58,7 @@
     content: "";
     width: 100%;
     height: 2.5px;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: var(--color-icon-half);
     position: absolute;
     border-radius: 20px;
     top: 0;

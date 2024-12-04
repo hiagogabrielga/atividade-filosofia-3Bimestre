@@ -39,13 +39,13 @@
 }
 
 .conteudo-section-footer h4{
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--color-emphasis-half);
     font-weight: bolder;
     margin: 13px 0 2px;
 }
 
 .conteudo-section-footer h3{
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--color-emphasis-half);
     font-weight: bolder;
     text-decoration: underline;
 }
@@ -63,7 +63,7 @@
 }
 
 .linha-footer{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--color-icon-half);
     height: 100;
     width: 1px;
     border-radius: 25%;
@@ -80,13 +80,13 @@
 }
 
 .conteudo-section-footer ul>li>a{
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--color-emphasis-half);
     text-decoration: none;
     transition: all 0.2s;
 }
 
 .conteudo-section-footer ul>li>a:hover{
-    color: black;
+    color: var(--color-emphasis);
 }
 
 .conteudo-section-footer ul>li>a>i>span{

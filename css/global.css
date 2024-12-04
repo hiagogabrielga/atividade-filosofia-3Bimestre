@@ -1,10 +1,33 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-:root{
-    --cor-background: #f4f4f4;
-    --cor-componentes: #e2e2e2;
-    --cor-detalhes: #53ff53;
-    font-family: 'Roboto', sans-serif;
-    --cor-copyright: #2E2E2E;
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --cor-background: #f4f4f4;
+        --cor-componentes: #e2e2e2;
+        --cor-detalhes: #53ff53;
+        font-family: 'Roboto', sans-serif;
+        --cor-copyright: #2E2E2E;
+        --color-emphasis: #000;
+        --color-emphasis-inverse: #FFF;
+        --color-emphasis-half: rgba(0,0,0,.5);
+        --color-text-primary: #2E2E2E;
+        --color-icon-half: rgba(0,0,0,.5);
+    }    
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --cor-background: #2e2e2e;
+        --cor-componentes: #141414;
+        --cor-detalhes: #53ff53;
+        font-family: 'Roboto', sans-serif;
+        --cor-copyright: #2E2E2E;
+        --color-emphasis: #FFF;
+        --color-emphasis-inverse: #000;
+        --color-emphasis-half: #909090;
+        --color-text-primary: #FFF;
+        --color-icon-half: rgba(255,255,255,.5);
+    }    
 }
 
 html, body{
@@ -48,6 +71,7 @@ main{
     text-align: center;
     font-weight: bolder;
     font-size: 27px;
+    color: var(--color-emphasis);
 }
 
 .section-ato-main h3, .section-sobre-ativide h3{
@@ -55,6 +79,7 @@ main{
     text-align: center;
     font-weight: bolder;
     font-size: 17px;
+    color: var(--color-emphasis);
 }
 
 .div-texto-imagem{
@@ -67,6 +92,7 @@ main{
 
 .div-texto-imagem p{
     text-align: justify;
+    color: var(--color-emphasis-half);
 }
 
 .section-ato-main p{
@@ -117,10 +143,11 @@ main{
     text-align: center;
     font-weight: bolder;
     font-size: 27px;
+    color: var(--color-emphasis);
 }
 
 #div-sinopse-main a{
-    color: #2E2E2E;
+    color: var(--color-text-primary);
     transition: all 0.2s;
 
 }
@@ -142,7 +169,7 @@ main{
 
 .ancoras-sinopse h3{
     font-weight: bold;
-    color: #2E2E2E;
+    color: var(--color-text-primary);
 }
 
 .div-texto-sinopse{
