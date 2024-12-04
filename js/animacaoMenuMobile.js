@@ -1,10 +1,23 @@
-var animation = lottie.loadAnimation({
+const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+var animation;
+if (isDarkMode) {
+  animation = lottie.loadAnimation({
     container: document.getElementById('lottie-animation-menu'),
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: './js/AnimationMenu.json'
+    path: './js/AnimationMenuBranco.json'
   });
+
+} else {
+  animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-menu'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: './js/AnimationMenuPreto.json'
+  });
+}
 
   var menuMobileContainer = document.getElementById('nav-mobile');
   var animationContainer = document.getElementById('lottie-animation-menu');

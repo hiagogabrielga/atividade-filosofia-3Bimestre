@@ -87,7 +87,8 @@ main{
 }
 
 .div-texto-imagem img{
-    width: 20%;
+    width: 40%;
+    object-fit: cover;
 }
 
 .div-texto-imagem p{
@@ -183,6 +184,7 @@ main{
 }
 
 @media screen and (max-width: 1180px){
+
     #quarto-paragrafo-ato-1-fora-da-div{
         display: flex;
     }
@@ -248,5 +250,6 @@ main{
     .div-texto-imagem img{
         margin: auto;
         margin-bottom: 10px;
+        width: 80%;
     }
 }
