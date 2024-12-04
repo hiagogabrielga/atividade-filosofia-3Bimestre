@@ -3,7 +3,7 @@ const subtitulos = [
     "A relação entre Caleb, Ava e Nathan se aprofunda.",
     "parte 3",
     "parte 4",
-    "parte 5",
+    "A Linha Tênue Entre Realidade e Artificialidade.",
     "parte 6",
     "parte 7"
 ]
