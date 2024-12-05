@@ -6,6 +6,7 @@
         --cor-background: #f4f4f4;
         --cor-componentes: #e2e2e2;
         --cor-detalhes: #53ff53;
+        --cor-titles: #2E2E2E;
         font-family: 'Poppins';
         --cor-copyright: #2E2E2E;
         --color-emphasis: #000;
@@ -18,9 +19,10 @@
 
 @media (prefers-color-scheme: dark) {
     :root{
-        --cor-background: #2e2e2e;
+        --cor-background: #2e2e2e;  
         --cor-componentes: #141414;
         --cor-detalhes: #53ff53;
+        --cor-titles: #53ff53;
         font-family: 'Poppins';
         --cor-copyright: #2E2E2E;
         --color-emphasis: #FFF;

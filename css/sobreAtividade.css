@@ -1,0 +1,97 @@
+.section-sobre-ativide {
+    padding: 20px;
+    background-color: var(--cor-background);
+    line-height: 1.6;
+    color: var(--color-text-primary)
+}
+
+.title-master{
+    color: var(--cor-detalhes);
+}
+
+.section-sobre-ativide h3 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--cor-text-primary);
+    margin-bottom: 15px;
+}
+
+.div-texto {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.div-texto .principal {
+    margin-bottom: 20px;
+    border-left: 4px solid var(--cor-detalhes);
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: var(--cor-componentes);
+
+}
+
+.div-texto h1.titulo-page {
+    font-size: 32pt;
+    color: var(--cor-titles);
+    margin-bottom: 10px;
+}
+
+.div-texto p {
+    text-align: justify;
+    font-size: 16px;
+    color: var(--color-text-primary)
+}
+
+.elaboracao-resumo, 
+.desenvolvimento-site {
+    margin-bottom: 20px;
+}
+
+.elaboracao-resumo h2, 
+.desenvolvimento-site h2, 
+.estrutura-site h3, 
+.estrutura-paginas h3 {
+    font-size: 20px;
+    color: var(--cor-titles);
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+.elaboracao-resumo p, 
+.desenvolvimento-site p {
+    padding: 10px;
+    border-left: 4px solid var(--cor-detalhes);
+    border-radius: 5px;
+    color: var(--color-text-primary);
+    background: var(--cor-componentes);
+
+
+}
+
+.estrutura-site ul, 
+.estrutura-paginas ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.estrutura-site ul li, 
+.estrutura-paginas ul li {
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 8px;
+    background: var(--cor-componentes);
+    color: var(--cor-text-primary);
+    border-left: 4px solid var(--cor-detalhes);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.estrutura-site ul h3, 
+.estrutura-paginas ul h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--cor-titles);
+    font-size: 20pt;
+}
