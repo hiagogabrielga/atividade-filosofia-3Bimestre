@@ -6,6 +6,7 @@
         --cor-background: #f4f4f4;
         --cor-componentes: #e2e2e2;
         --cor-detalhes: #53ff53;
+        --cor-titles: #2E2E2E;
         font-family: 'Poppins';
         --cor-copyright: #2E2E2E;
         --color-emphasis: #000;
@@ -18,9 +19,10 @@
 
 @media (prefers-color-scheme: dark) {
     :root{
-        --cor-background: #2e2e2e;
+        --cor-background: #2e2e2e;  
         --cor-componentes: #141414;
         --cor-detalhes: #53ff53;
+        --cor-titles: #53ff53;
         font-family: 'Poppins';
         --cor-copyright: #2E2E2E;
         --color-emphasis: #FFF;
@@ -54,6 +56,7 @@ main{
 .section-ato-main, #div-sinopse-main, .section-sobre-ativide, .section-envolvidos-main{
     background-color: var(--cor-componentes);
     min-height: 250px;
+    height: max-content;
     width: 90vw;
     margin: 50px 0;
     border-radius: 10px;
@@ -85,11 +88,15 @@ main{
 
 .div-texto-imagem{
     display: flex;
+    height: max-content;
 }
 
 .div-texto-imagem img{
     width: 40%;
     object-fit: cover;
+    min-width: 20%;
+    margin-left: 17px;
+    border-radius: 10px;
 }
 
 .div-texto-imagem p{
@@ -103,18 +110,13 @@ main{
     color: var(--color-emphasis-half);
 }
 
-.div-texto-imagem img{
-    min-width: 20%;
-    margin-left: 17px;
-    border-radius: 10px;
-}
-
 .imagem-section-ato{
     width: 40%;
 }
 
 .div-texto-ato {
     width: 70%;
+    height: max-content;
     font-size: 17px;
     line-height: 20px;
 }
@@ -262,6 +264,8 @@ strong {
 
     .div-texto-ato{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .div-texto-imagem img{
