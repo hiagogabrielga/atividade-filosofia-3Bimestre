@@ -1,23 +1,18 @@
-const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+var isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 var animation;
+var nomeArquivo;
 if (isDarkMode) {
-  animation = lottie.loadAnimation({
-    container: document.getElementById('lottie-animation-menu'),
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    path: './js/AnimationMenuBranco.json'
-  });
-
+  nomeArquivo ='./js/AnimationMenuBranco.json'
 } else {
-  animation = lottie.loadAnimation({
-    container: document.getElementById('lottie-animation-menu'),
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    path: './js/AnimationMenuPreto.json'
-  });
-}
+    nomeArquivo = './js/AnimationMenuPreto.json'
+  }
+animation = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation-menu'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: nomeArquivo
+});
 
   var menuMobileContainer = document.getElementById('nav-mobile');
   var animationContainer = document.getElementById('lottie-animation-menu');

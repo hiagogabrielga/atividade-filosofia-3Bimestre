@@ -100,6 +100,7 @@ main{
 .section-ato-main p{
     text-align: justify;
     margin-top: 5px;
+    color: var(--color-emphasis-half);
 }
 
 .div-texto-imagem img{
@@ -118,18 +119,21 @@ main{
 
 #section-ato-dois>.div-texto-imagem>img{
     width: 50%;
+    object-fit: cover;
 }
 
 #imagem-ato-1{
     width: 45%;
-    height: 70%;
+    height: 100%;
     margin-left: 0px;
     margin-right: 17px;
     margin-top: 7px;
+    object-fit: cover;
 }
 
 #imagem-ato-2{
     height: auto;
+
 }
 
 #section-ato-1 p{
@@ -203,13 +207,19 @@ main{
         display: flex;
     }
 
-    #section-ato-2 img{
+    #imagem-ato-2{
         margin: 15px auto 0;
+        width: 100%;
     }
 
     #section-ato-2 .div-texto-ato{
         width: 100%;
     }
+    #section-ato-dois>.div-texto-imagem>img{
+        width: 100%;
+        margin: 10px 0 auto;
+    }
+
 }
 
 
@@ -220,6 +230,7 @@ main{
 
     #imagem-ato-1{
         margin: 15px auto;
+        width: 90%;
     }
 
     #texto-imagem-sinopse{

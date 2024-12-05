@@ -69,6 +69,23 @@ window.addEventListener("scroll", function () {
     let header = document.querySelector('.header')
     let ancoraEscolhida = this.document.querySelector('#ancora-escolhida')
     let conteudo = document.querySelector('.div-logo-header')
+
+
     header.classList.toggle('rolagem', window.scrollY > 0)
     conteudo.classList.toggle('rolagem', window.scrollY > 100)
+
+
+    var isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    var nomeDaCor = isDarkMode ? 'White' : 'Black'
+    if(window.scrollY == 0){
+        nomeDaCor = 'white'
+        caminhodaImagemHeader = './img/logo-header-escuro.png'
+        
+    }
+
+    ancoraEscolhida.style.color = nomeDaCor
+
 })
+
+
