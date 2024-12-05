@@ -64,27 +64,35 @@ if (window.innerWidth > 765) {
     updateCarousel();
 }
 
+function arrumarCores() {
+    let imagemHeader = this.document.querySelector('.logo-header')
+    let imagemFooter = this.document.querySelector('.logo-footer')
+    let ancoraEscolhida = this.document.querySelector('#ancora-escolhida')
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    var nomeDaCor = isDarkMode ? 'White' : 'Black'
+    var caminhodaImagemHeader = isDarkMode ? './img/logo-header-escuro.png' : './img/logo-header-claro.png'
+    var caminhodaImagemFooter = isDarkMode ? './img/logo-footer-escuro.png' : './img/logo-footer-claro.png'
+    if(window.scrollY <= 0){
+        nomeDaCor = 'white' 
+        caminhodaImagemHeader = './img/logo-header-escuro.png'
+    }
+    imagemHeader.src = caminhodaImagemHeader
+    imagemFooter.src = caminhodaImagemFooter
+    ancoraEscolhida.style.color = nomeDaCor
+}
+
+
+window.addEventListener("load", arrumarCores ())
 
 window.addEventListener("scroll", function () {
     let header = document.querySelector('.header')
-    let ancoraEscolhida = this.document.querySelector('#ancora-escolhida')
     let conteudo = document.querySelector('.div-logo-header')
-
 
     header.classList.toggle('rolagem', window.scrollY > 0)
     conteudo.classList.toggle('rolagem', window.scrollY > 100)
 
-
-    var isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    var nomeDaCor = isDarkMode ? 'White' : 'Black'
-    if(window.scrollY == 0){
-        nomeDaCor = 'white'
-        caminhodaImagemHeader = './img/logo-header-escuro.png'
-        
-    }
-
-    ancoraEscolhida.style.color = nomeDaCor
+    arrumarCores()
 
 })
 
