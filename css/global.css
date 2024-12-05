@@ -53,7 +53,7 @@ main{
     align-items: center;
 }
 
-.section-ato-main, #div-sinopse-main, .section-sobre-ativide, .section-envolvidos-main{
+.section-ato-main, #div-sinopse-main, .section-envolvidos-main{
     background-color: var(--cor-componentes);
     min-height: 250px;
     height: max-content;
@@ -64,6 +64,18 @@ main{
     padding: 2%;
     scroll-margin-top: 120px;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.section-sobre-ativide{
+    background-color: var(--cor-componentes);
+    min-height: 250px;
+    height: max-content;
+    width: 90vw;
+    margin: 50px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 2%;
+    scroll-margin-top: 120px;
 }
 
 .section-sobre-ativide, .section-envolvidos-main{
