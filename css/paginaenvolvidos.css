@@ -12,6 +12,11 @@
     font-size: 16px;
 }
 
+.section-envolvidos-main h4{
+    color: var(--color-emphasis-half);
+    font-weight: bolder;
+}
+
 .botao-insta-envolvidos{
     background-color: transparent;
     border: none;

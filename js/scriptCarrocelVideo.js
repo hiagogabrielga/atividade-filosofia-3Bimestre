@@ -1,11 +1,11 @@
 const subtitulos = [
     "Caleb é convidado para testar Ava.",
     "A relação entre Caleb, Ava e Nathan se aprofunda.",
-    "parte 3",
-    "parte 4",
+    "Ava e Caleb tem uma interação mais íntima.",
+    "Caleb começa a duvidar da ética de Nathan.",
     "A Linha Tênue Entre Realidade e Artificialidade.",
-    "parte 6",
-    "parte 7"
+    "Tensão começa.",
+    "Ex Machina termina de forma aberta."
 ]
 
 const carousel = document.querySelector('.carousel');
@@ -73,7 +73,7 @@ function arrumarCores() {
     var nomeDaCor = isDarkMode ? 'White' : 'Black'
     var caminhodaImagemHeader = isDarkMode ? './img/logo-header-escuro.png' : './img/logo-header-claro.png'
     var caminhodaImagemFooter = isDarkMode ? './img/logo-footer-escuro.png' : './img/logo-footer-claro.png'
-    if(window.scrollY <= 0){
+    if(window.scrollY <= 0 && window.innerWidth > 765){
         nomeDaCor = 'white' 
         caminhodaImagemHeader = './img/logo-header-escuro.png'
     }
