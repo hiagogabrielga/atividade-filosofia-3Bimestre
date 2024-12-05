@@ -262,6 +262,8 @@ strong {
 
     .div-texto-ato{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .div-texto-imagem img{
