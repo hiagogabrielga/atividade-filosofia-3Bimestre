@@ -129,7 +129,7 @@
     }
 }
 
-@media screen and (max-width: 765px){
+@media screen and (max-width: 890px){
     .carousel-container{
         display: none;
     }

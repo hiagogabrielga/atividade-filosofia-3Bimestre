@@ -58,7 +58,7 @@ main{
     min-height: 250px;
     height: max-content;
     width: 90vw;
-    margin: 50px 0;
+    margin: 50px auto;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 2%;
@@ -66,19 +66,19 @@ main{
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.section-sobre-ativide{
+.section-sobre-ativide, .texto-filosofia-filme{
     background-color: var(--cor-componentes);
     min-height: 250px;
     height: max-content;
     width: 90vw;
-    margin: 50px 0;
+    margin: 50px auto;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 2%;
     scroll-margin-top: 120px;
 }
 
-.section-sobre-ativide, .section-envolvidos-main{
+.section-sobre-ativide, .section-envolvidos-main, .section-filosofia-filme{
     margin-top: 120px;
 }
 
@@ -116,7 +116,7 @@ main{
     color: var(--color-emphasis-half);
 }
 
-.section-ato-main p{
+.section-ato-main p, .texto-filosofia-filme p{
     text-align: justify;
     margin-top: 5px;
     color: var(--color-emphasis-half);
@@ -126,8 +126,18 @@ main{
     width: 40%;
 }
 
+.ancora-apostila-filosofia a{
+    color: var(--color-emphasis);
+}
+
 .div-texto-ato {
     width: 70%;
+    height: max-content;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.div-texto-conclusao{
     height: max-content;
     font-size: 17px;
     line-height: 20px;
@@ -166,7 +176,7 @@ main{
     font-weight: bold;
 }
 
-.conteudo-main > h2{
+.conteudo-main h2{
     margin: 50px 20px 0;
     text-align: center;
     font-weight: bolder;

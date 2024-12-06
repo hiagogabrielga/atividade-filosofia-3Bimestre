@@ -73,7 +73,7 @@ function arrumarCores() {
     var nomeDaCor = isDarkMode ? 'White' : 'Black'
     var caminhodaImagemHeader = isDarkMode ? './img/logo-header-escuro.png' : './img/logo-header-claro.png'
     var caminhodaImagemFooter = isDarkMode ? './img/logo-footer-escuro.png' : './img/logo-footer-claro.png'
-    if(window.scrollY <= 0 && window.innerWidth > 765){
+    if(window.scrollY <= 0 && window.innerWidth > 865){
         nomeDaCor = 'white' 
         caminhodaImagemHeader = './img/logo-header-escuro.png'
     }
